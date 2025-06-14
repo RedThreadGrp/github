@@ -2,16 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Red Thread Group</title>
+  <title>Home - Red Thread Group</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
-  <header>…navigation same across pages…</header>
+<body class="fade">
+  <header>
+    <img src="assets/img/logo.png" class="logo" alt="Red Thread Group" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Insights</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="controls">
+      <button id="theme-toggle">🌓</button>
+    </div>
+  </header>
+
   <main id="main-content"></main>
-  <footer>…footer…</footer>
-  <script>const sections=['home-hero','home-features'];</script>
+
+  <footer>&copy; 2025 Red Thread Group. All rights reserved.</footer>
+
+  <script>const sections = ['home-hero', 'home-features'];</script>
   <script src="assets/js/load-content.js"></script>
 </body>
 </html>
+
 
