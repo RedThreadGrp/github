@@ -1,12 +1,6 @@
-const sections = [
-  'hero',
-  'features',
-  'blog-section',
-  'contact-form'
-];
-
 window.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById('main-content');
+  if (!window.sections) return;
   sections.forEach(section => {
     fetch(`content/${section}.html`)
       .then(res => res.text())
