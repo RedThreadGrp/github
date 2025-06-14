@@ -70,4 +70,34 @@ footer {
   text-align: center;
   padding: 1.5rem;
 }
+:root {
+  --bg: #fff;
+  --fg: #333;
+  --header-bg: #fff;
+  --link-hover: #c0392b;
+}
+[data-theme="dark"] {
+  --bg: #121212;
+  --fg: #ddd;
+  --header-bg: #1f1f1f;
+  --link-hover: #e74c3c;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+a { color: var(--fg); transition: color 0.3s; }
+a:hover { color: var(--link-hover); }
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.fade.loaded {
+  opacity: 1;
+}
 
